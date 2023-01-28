@@ -18,16 +18,9 @@ header{
     left: 0;
     bottom: 0;
     width: 400px;
-    /* transition: all ease-in-out 0.5s;
-    z-index: 9997;
-    transition: all 0.5s; */
     padding: 0 15px;
     background-color: #274054;
-    /* overflow-y: auto; */
-    
-    /* justify-content: space-around; */
     padding: 20px;
-    
     height: 100%;
 }
 
@@ -103,7 +96,7 @@ main h1{
     color: #274054;
 }
 
-main img{
+main .computer{
     width: 100%;
 }
 
@@ -113,6 +106,10 @@ main h2{
 
 p{
     line-height: 30px;
+}
+
+.exercice img{
+    width: 30%;
 }
 
 
