@@ -1,6 +1,78 @@
+/***************** FONT *******************/
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu', sans-serif;
+    src: url(../font/Ubuntu-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Rochester';
+    src: url(../font/Rochester-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/***************** GLOBAL *******************/
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
 * {
 	box-sizing : border-box;
-    font-family: 'Ubuntu', sans-serif;
 }
 
 html, body {
@@ -10,107 +82,99 @@ html, body {
     background-color: #fbfcfe;
 }
 
+h1,h2{
+    font-family: 'Rochester';
+    color:#274054;
+}
+
 /***************** HEADER *******************/
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 400px;
-    padding: 0 15px;
     background-color: #274054;
-    padding: 20px;
-    height: 100%;
+    width: 100%;
 }
 
-.en-tete{
+.top{
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-header h1{
+    text-align: center;
     font-family: 'rochester';
-    font-size: 40px;
-    color: #fbfcfe; 
+    color: #fbfcfe;
+    padding-top: 10px;
     font-weight: 100;
-}
-
-header h2{
-    font-family: 'rochester';
-    color: #fbfcfe; 
     font-size: 30px;
-    margin-top: 0;
-    font-weight: 100;
 }
 
-.container{
-    width: 1000px;
-    margin: auto auto auto 20px;
-    
+@media screen and (min-width: 768px) {
+    .top{
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 40px;
+    }
 }
+
 nav{
-    padding-left: 20px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
     margin: 0;
-    padding: 0;
 }
-
 nav ul li{
     list-style: none;
-    margin-bottom: 30px;
-    
 }
 
 nav ul li a{
-    font-family: 'rochester';
     text-decoration: none;
-    color: #fbfcfe;
-    font-size: 30px;
-}
-
-.photo{
-    width: 200px;
-    height: auto;
-    border-radius: 100px;
-    margin: 50px auto;
+    color:#fbfcfe;
+    font-size: 20px;
 }
 
 /************* MAIN **************/
 
-main{
-    display: flex;
-    flex-direction: column;
-    margin-left: 400px;
-    color: #274054;
+.computer{
+    background: url('../img/computer.jpg') no-repeat top;
+    background-size: 100%;
+	height: 300px;
 }
 
-main h1{
-    font-family: 'rochester';
-    font-weight: 100;
-    font-size: 40px;
-    color: #274054;
+@media screen and (min-width: 768px) {
+    .computer {
+        height: 500px;
+    }
 }
 
-main .computer{
-    width: 100%;
+@media screen and (min-width: 992px) {
+    .computer {
+        height: 700px;
+    }
 }
 
-main h2{
-    font-weight: 100;
+@media screen and (min-width: 1200px) {
+    .computer {
+        height: 900px;
+    }
 }
 
-p{
-    line-height: 30px;
+/************* ANCRES **************/
+
+/* #parcours span{
+    height: 200px;
+} */
+
+/************* CARDS **************/
+
+.card{
+    border: none;
+    background-color: transparent;
 }
 
-.exercice img{
-    width: 30%;
+.presentation .card img{
+    max-width: 200px;
+    margin: auto;
+    object-fit: cover;
 }
-
-
-
