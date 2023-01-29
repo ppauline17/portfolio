@@ -8,8 +8,13 @@ body{
     height: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin: 0;
+}
+
+.title{
+    margin: 0;
 }
 
 #container{
@@ -67,7 +72,6 @@ body{
 
 h4{
     text-align: center;
-    
     font-size: 28px;
     color: white;
 }
@@ -86,9 +90,16 @@ h4{
 }
 
 h1{
+    text-align: center;
     color:#1284EB;
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Rochester', cursive;
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        font-size: 60px;
+    }
 }
 
 .green{
@@ -137,12 +148,19 @@ select{
     height: 80%;
     width: 50%;
     border-radius: 20px;
-    font-size: 25px;
+    font-size: 15px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
     overflow: hidden;
 }
+
+@media screen and (min-width: 992px) {
+    #historique{
+        font-size: 24px;
+    }
+}
+
 
 #historique p{
     margin: 5px;
