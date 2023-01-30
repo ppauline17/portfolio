@@ -178,3 +178,8 @@ nav ul li a{
     margin: auto;
     object-fit: cover;
 }
+
+.btn-outline-primary{
+    color:#274054;
+    border: 1px solid #274054;
+}
