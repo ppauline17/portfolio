@@ -27,10 +27,13 @@
     </header>
     <main>
         <div class="computer"></div>
-        <section class="presentation">
+        <section class="presentation mb-5 pb-5">
             <div class="container">
                 <div class="d-flex flex-column align-items-center">
-                    <h1 id="parcours" class="mb-5 mt-5">Présentation</h1>
+                    <div class="position-relative">
+                        <h1 class="mb-5 mt-5">Présentation</h1>
+                        <span class="marker" id="parcours"></span>
+                    </div>
                     <div class="card">
                         <img src="img/IMG_2827.jpg" class="card-img-top rounded-circle" alt="...">
                         <div class="card-body">
@@ -40,13 +43,16 @@
                 </div>
             </div>
         </section>
-        <section class="realisations">
+        <section class="realisations pt-5 mb-5">
             <div class="container">
-                <h1 id="realisations" class="text-center mt-5 mb-5">Réalisations</h1>
+                <div class="position-relative mt-5 mb-5">
+                    <h1 class="text-center">Réalisations</h1>
+                    <span class="marker" id="realisations"></span>
+                </div>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
                         <div class="card mb-5">
-                            <img src="img/trouve-le-nombre.png" class="card-img-top" alt="...">
+                            <a href="https://ppauline17.github.io/trouver_le_nombre/" target="_blank"><img src="img/trouve-le-nombre.png" class="card-img-top" alt="jeu trouver le nombre"></a>
                             <div class="card-body">
                             <h5 class="card-title">Jeu - Trouve le nombre</h5>
                             <p class="card-text">Exercice réalisé pendant la formation en javascript.</p>
@@ -55,46 +61,49 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div class="container">
-                    <h1 id="contact" class="text-center mt-5 mb-5">Contact</h1>
-                    <form action="#" method="post">
-                        <div class="row">
-                            <div class="col-md-4 offset-md-4">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control"name="nom" placeholder="Nom">
-                                    <label>Nom</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="prenom" placeholder="Nom">
-                                    <label>Prénom</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" name="email" placeholder="Email">
-                                    <label>Email</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="sujet" placeholder="Sujet">
-                                    <label>Sujet</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" placeholder="Message"style="height: 100px"></textarea>
-                                    <label>Message</label>
-                                </div>
-                                <div class="form-check mb-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        En validant ce formulaire, vous acceptez d'être contacté
-                                    </label>
-                                </div>
-                                <input class="btn btn-outline-primary mb-5" type="submit" id="submit"value="Envoyer">
-                            </div>
-                        </div>
-                    </form>
+            </div>
+        </section>
+        <section class="mt-5 mb-5">
+            <div class="container">
+                <div class="position-relative">
+                    <h1 class="text-center mb-5">Contact</h1>
+                    <span class="marker" id="contact"></span>
                 </div>
-            </section>
-        </div>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-4">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control"name="nom" placeholder="Nom">
+                                <label>Nom</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="prenom" placeholder="Nom">
+                                <label>Prénom</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                <label>Email</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" name="sujet" placeholder="Sujet">
+                                <label>Sujet</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Message"style="height: 100px"></textarea>
+                                <label>Message</label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    En validant ce formulaire, vous acceptez d'être contacté
+                                </label>
+                            </div>
+                            <input class="btn btn-outline-primary mb-5" type="submit" id="submit"value="Envoyer">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>

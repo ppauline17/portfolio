@@ -79,7 +79,6 @@ html, body {
 	margin:0;
 	padding:0;
     scroll-behavior: smooth;
-    background-color: #fbfcfe;
 }
 
 h1,h2{
@@ -90,13 +89,17 @@ h1,h2{
 body{
     display: flex;
     flex-direction: column;
+    background-color: #fbfcfe;
 }
 
 /***************** HEADER *******************/
 
 header{
-    background-color: #274054;
+    background-color: #323232;
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 main{
@@ -171,9 +174,10 @@ nav ul li a{
 
 /************* ANCRES **************/
 
-/* #parcours span{
-    height: 200px;
-} */
+.marker {
+  position: absolute;
+  top: -120px;
+}
 
 /************* CARDS **************/
 
