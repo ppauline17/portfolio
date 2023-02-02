@@ -87,11 +87,20 @@ h1,h2{
     color:#274054;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 /***************** HEADER *******************/
 
 header{
     background-color: #274054;
     width: 100%;
+}
+
+main{
+    min-height: 100vh;
 }
 
 .top{
