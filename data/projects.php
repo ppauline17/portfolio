@@ -5,7 +5,7 @@
             'picture' => 'assets/img/exacom', 
             'description' => '<p>Ce site a été réalisé pour un examen HTML CSS avec Bootstrap en 3 heures à partir de maquettes fournies par le formateur.</p>',
             'website' => 'https://pauline-pasquier-dev.fr/exacom',
-            'github' => false,
+            'github' => 'https://github.com/ppauline17/exacom',
             'isInProgress' => false
         ],
         [
