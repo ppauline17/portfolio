@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Nunito";
+  src: url(../font/Nunito-Regular.ttf);
+}
+* {
+  font-family: "Nunito";
+}
+
+header {
+  color: #355070;
+}
+
+.bg-nav {
+  background-color: white;
+}
+
+.nav-item .nav-link {
+  color: #355070;
+  transform: scale(1);
+  transition: transform 0.1s linear;
+}
+.nav-item .nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s linear;
+  color: #E56B6F;
+}
+.nav-item .nav-link .nav-icon {
+  fill: #355070;
+  height: 25px;
+  width: 25px;
+}
+.nav-item .nav-link span {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .nav-item .nav-link span {
+    display: inline;
+  }
+}
+.nav-item .active {
+  transform: scale(1.1);
+  color: #E56B6F;
+}
+.nav-item .active .nav-icon {
+  fill: #E56B6F;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.about {
+  margin-top: 50px;
+  background-color: #355070;
+  color: white;
+  padding: 20px 0;
+}
+
+.about .profil-img {
+  display: block;
+  border-radius: 100%;
+  width: 25vh;
+  height: 25vh;
+  object-fit: cover;
+  margin: auto;
+  border: 5px solid #355070;
+  outline: 5px solid #E56B6F;
+}
+
+.line {
+  display: inline-block;
+  width: 12vw;
+  margin-right: 3vh;
+  border: 1px solid #355070;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.knowledge {
+  padding: 20px 0;
+  color: #355070;
+}
+
+.langages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements {
+  background-color: #E56B6F;
+  color: white;
+  padding: 20px 0;
+}
+
+.contact {
+  padding: 20px 0;
+  color: #355070;
+  min-height: 100vh;
+}
+
+.btn-light {
+  color: #355070;
+  border: none;
+  transform: scale(1);
+  transition: transform 0.1s linear;
+}
+.btn-light:hover {
+  color: white;
+  background-color: #E56B6F;
+  transform: scale(1.1);
+  transition: transform 0.1s linear;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+textarea {
+  height: 30vh;
+}
+
+#messageReponse {
+  height: 30px;
+  color: #E56B6F;
+}
+
+.flip-card-container {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.flip-card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 500ms ease-in-out;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+}
+
+.flip-card img {
+  display: block;
+  height: 70%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.flip-card p {
+  color: #355070;
+}
+
+.achievements a {
+  display: inline-block;
+  width: fit-content;
+}
+
+.rotate {
+  transform: rotateY(180deg);
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 20px;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  background: white;
+}
+
+.side--front {
+  z-index: 1;
+}
+
+.side--back {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.skill-icon {
+  fill: #E56B6F;
+  height: 30px;
+  width: 30px;
+  transform: scale(1);
+  transition: transform 0.1s linear;
+}
+
+a .skill-icon:hover {
+  fill: #EAAC8B;
+  transform: scale(1.2);
+  transition: transform 0.1s linear;
+}/*# sourceMappingURL=style.css.map */
