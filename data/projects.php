@@ -34,7 +34,8 @@
             'picture' => 'assets/img/grand_angle', 
             'description' => '<p>Application web en 2 modules permettant de gérer des expositions et leurs oeuvres associées et de proposer au public du contenu enrichi pour chaque oeuvre en accédant à sa fiche via un QR code.</p>
             <p>Projet créé lors de la formation puis amélioré pour présenter à l\'examen. Architecture MVC, PHP, Javascript, HTML, CSS, Bootstrap, Twig.</p>',
-            'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
+            // 'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
+            'website' => false,
             'github' => 'https://github.com/ppauline17/grand_angle',
             'isInProgress' => false
         ],
