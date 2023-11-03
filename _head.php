@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LVPBGZKB7Y"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z5RW6XH21J"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-LVPBGZKB7Y');
+  gtag('config', 'G-Z5RW6XH21J');
 </script>
