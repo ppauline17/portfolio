@@ -10,6 +10,10 @@ header {
   color: #355070;
 }
 
+.bg-blue{
+    background-color: #355070;
+}
+
 .bg-nav {
   background-color: white;
 }

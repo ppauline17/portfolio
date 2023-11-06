@@ -95,7 +95,7 @@
                                         <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="card-img-top h-100 object-fit-contain">
                                     </picture>
                                     <div class="card-body">
-                                        <h5 class="card-title"><?php echo $project['title']; if($project['isInProgress']){?> <span class="badge rounded-pill text-bg-primary">En cours</span><?php } ?></h5>
+                                        <h5 class="card-title"><?php echo $project['title']; if($project['isInProgress']){?> <span class="badge rounded-pill bg-blue">En cours</span><?php } ?></h5>
                                         <p class="card-text"><small class="text-body-secondary">Dernière mise à jour <?=$project['updateDate']?></small></p>
                                         <hr>
                                         <div class="row">
