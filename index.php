@@ -84,53 +84,56 @@
                         <div class="row mb-5">
                         <?php
                             require_once('data/projects.php');
-                            $number = 1;
                             foreach($projects as $project){
                         ?>
-                            <div class="col-md-6 col-lg-4 mb-5">
-                                <h5 class="text-center"><?=$project['title']?></h5>
-                                <div class="flip-card-container">
-                                    <div class="flip-card" id="flip-card-<?=$number?>">
-                                        <div class="side side--front">
-                                        <picture class="w-100">
-                                            <!-- Source WebP pour les navigateurs compatibles -->
-                                            <source srcset="<?=$project['picture']?>.webp" type="image/webp" class="img-fluid">
-                                            <!-- Source JPG pour les navigateurs non compatibles -->
-                                            <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="img-fluid">
-                                        </picture>
-                                    <?php
-                                        if($project['isInProgress']){
-                                    ?>
-                                        <div class="text-dark text-center mt-2">PROJET EN COURS</div>
-                                    <?php
+                            <div class="col-md-6 col-xxl-4 mb-5">
+                                <div class="card mb-3 bg-light">
+                                    <picture class="w-100 p-3" style="height: 30vh;">
+                                        <!-- Source WebP pour les navigateurs compatibles -->
+                                        <source srcset="<?=$project['picture']?>.webp" type="image/webp" class="card-img-top h-100 object-fit-contain">
+                                        <!-- Source JPG pour les navigateurs non compatibles -->
+                                        <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="card-img-top h-100 object-fit-contain">
+                                    </picture>
+                                    <div class="card-body">
+                                        <h5 class="card-title"><?php echo $project['title']; if($project['isInProgress']){?> <span class="badge rounded-pill text-bg-primary">En cours</span><?php } ?></h5>
+                                        <p class="card-text"><small class="text-body-secondary">Dernière mise à jour <?=$project['updateDate']?></small></p>
+                                        <hr>
+                                        <div class="row">
+                                        <?php
+                                        if($project['website']){
+                                        ?>
+                                            <div class="col-8 offset-2 mb-3 col-xl-4 offset-xl-0">
+                                                <a href="<?=$project['website']?>" target="_blank" class="w-100">
+                                                    <button class="btn btn-light shadow w-100">Visiter</button>
+                                                </a>
+                                            </div>
+                                        <?php
                                         }
-                                    ?>
-                                        <button class="btn btn-light <?php if($project['isInProgress']){echo'mt-3';}else{echo'mt-5';}?>">En savoir plus</button>
+                                        if($project['github']){
+                                        ?>
+                                            <div class="col-8 offset-2 mb-3 col-xl-4 offset-xl-0">
+                                                <a href="<?=$project['github']?>" target="_blank" class=" w-100">
+                                                    <button class="btn btn-light shadow w-100">Github</button>
+                                                </a>
+                                            </div>
+                                        <?php
+                                            }
+                                        ?>
+                                            <div class="col-8 offset-2 mb-3 col-xl-4 offset-xl-0">
+                                                <button class="btn btn-light shadow w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseId<?=$project['id']?>" aria-expanded="false" aria-controls="collapseExample">
+                                                    Infos
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="side side--back">
-                                            <?=$project['description']?>
+                                        <div class="collapse multi-collapse" id="collapseId<?=$project['id']?>">
+                                            <div class="card-text">
+                                                <?=$project['description']?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                        <?php
-                            if($project['website']){
-                        ?>
-                                <a href="<?=$project['website']?>" target="_blank">
-                                    <button class="btn btn-light mt-3 me-3">Visiter le site</button>
-                                </a>
-                        <?php
-                            }
-                            if($project['github']){
-                        ?>
-                                <a href="<?=$project['github']?>" target="_blank">
-                                    <button class="btn btn-light mt-3">Projet sur Github</button>
-                                </a>
-                        <?php
-                            }
-                        ?>
                             </div>
                         <?php
-                            $number ++;
                             }
                         ?>
                         </div>
@@ -180,7 +183,7 @@
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/sendMail.js"></script>
-    <script src="assets/js/flipCard.js"></script>
+    <!-- <script src="assets/js/flipCard.js"></script> -->
     <script src="assets/js/activeLink.js"></script>
 
 </body>

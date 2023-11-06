@@ -1,24 +1,18 @@
 <?php
     $projects = [
+        
         [
-            'title' => 'Exacom', 
-            'picture' => 'assets/img/exacom', 
-            'description' => '<p>Ce site a été réalisé pour un examen HTML CSS avec Bootstrap en 3 heures à partir de maquettes fournies par le formateur.</p>',
-            'website' => 'https://pauline-pasquier-dev.fr/exacom',
-            'github' => 'https://github.com/ppauline17/exacom',
-            'isInProgress' => false
+            'id' => 6,
+            'title' => 'En Avant Ton Aventure', 
+            'picture' => 'assets/img/eata', 
+            'description' => '<p>Projet que je réalise bénévolement pour l\'accueil périscolaire de ma commune.</p>',
+            'website' => 'https://eata.pauline-pasquier-dev.fr/',
+            'github' => 'https://github.com/ppauline17/eata',
+            'isInProgress' => true,
+            'updateDate' => 'Novembre 2023'
         ],
         [
-            'title' => 'Le lavoir éléctrique', 
-            'picture' => 'assets/img/lavoirelectrique', 
-            'description' => '<p>Projet réalisé en 3 jours lors du Co créative challenge à l\'ISFAC en Février 2023 en MVC PHP.</p>
-            <p>3 groupes en compétition composés de chefs de projets, web-designers et développeurs web. Nous devions créer un nouveau site pour Le Lavoir Electrique qui est un festival de rock près de Poitiers.</p>
-            <p>Les maquettes ont été fournies par les web-designers.</p>',
-            'website' => 'https://pauline-pasquier-dev.fr/lavoirelectrique',
-            'github' => false,
-            'isInProgress' => false
-        ],
-        [
+            'id' => 3,
             'title' => 'Eco pratique', 
             'picture' => 'assets/img/ecopratique', 
             'description' => '<p>Premier examen PHP réalisé en décembre 2022 en 7 heures.</p>
@@ -27,33 +21,56 @@
             <p>Projet amélioré en octobre 2023.</p>',
             'website' => 'https://pauline-pasquier-dev.fr/ecopratique',
             'github' => 'https://github.com/ppauline17/ecopratique',
-            'isInProgress' => false
+            'isInProgress' => false,
+            'updateDate' => 'Octobre 2023'
         ],
         [
-            'title' => 'Grand Angle', 
-            'picture' => 'assets/img/grand_angle', 
-            'description' => '<p>Application web en 2 modules permettant de gérer des expositions et leurs oeuvres associées et de proposer au public du contenu enrichi pour chaque oeuvre en accédant à sa fiche via un QR code.</p>
-            <p>Projet créé lors de la formation puis amélioré pour présenter à l\'examen. Architecture MVC, PHP, Javascript, HTML, CSS, Bootstrap, Twig.</p>',
-            'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
-            'github' => 'https://github.com/ppauline17/grand_angle',
-            'isInProgress' => false
-        ],
-        [
+            'id' => 5,
             'title' => 'Parkings Poitiers', 
             'picture' => 'assets/img/parking', 
             'description' => '<p>Petit projet React créé à l\'aide de l\'API de grand Poitiers permettant de voir les places disponibles dans les parkings en temps réel</p>
             <p>Réalisé seule en une journée</p>',
             'website' => 'https://ppauline17.github.io/parking/',
             'github' => 'https://github.com/ppauline17/parking',
-            'isInProgress' => false
+            'isInProgress' => false,
+            'updateDate' => 'Septembre 2023'
         ],
         [
-            'title' => 'En Avant Ton Aventure', 
-            'picture' => 'assets/img/eata', 
-            'description' => '<p>Projet que je réalise bénévolement pour l\'accueil périscolaire de ma commune.</p>',
-            'website' => 'https://eata.pauline-pasquier-dev.fr/',
-            'github' => 'https://github.com/ppauline17/eata',
-            'isInProgress' => true
+            'id' => 4,
+            'title' => 'Grand Angle', 
+            'picture' => 'assets/img/grand_angle', 
+            'description' => '<p>Application web en 2 modules permettant de gérer des expositions et leurs oeuvres associées et de proposer au public du contenu enrichi pour chaque oeuvre en accédant à sa fiche via un QR code.</p>
+            <p>Projet créé lors de la formation puis amélioré pour présenter à l\'examen. Architecture MVC, PHP, Javascript, HTML, CSS, Bootstrap, Twig.</p>',
+            'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
+            'github' => 'https://github.com/ppauline17/grand_angle',
+            'isInProgress' => false,
+            'updateDate' => 'Août 2023'
         ],
+        [
+            'id' => 2,
+            'title' => 'Le lavoir éléctrique', 
+            'picture' => 'assets/img/lavoirelectrique', 
+            'description' => '<p>Projet réalisé en 3 jours lors du Co créative challenge à l\'ISFAC en Février 2023 en MVC PHP.</p>
+            <p>3 groupes en compétition composés de chefs de projets, web-designers et développeurs web. Nous devions créer un nouveau site pour Le Lavoir Electrique qui est un festival de rock près de Poitiers.</p>
+            <p>Les maquettes ont été fournies par les web-designers.</p>',
+            'website' => 'https://pauline-pasquier-dev.fr/lavoirelectrique',
+            'github' => false,
+            'isInProgress' => false,
+            'updateDate' => 'Mai 2023'
+        ],
+        [
+            'id' => 1,
+            'title' => 'Exacom', 
+            'picture' => 'assets/img/exacom', 
+            'description' => '<p>Ce site a été réalisé pour un examen HTML CSS avec Bootstrap en 3 heures à partir de maquettes fournies par le formateur.</p>',
+            'website' => 'https://pauline-pasquier-dev.fr/exacom',
+            'github' => 'https://github.com/ppauline17/exacom',
+            'isInProgress' => false,
+            'updateDate' => 'Avril 2023'
+        ],
+        
+        
+        
+        
     ];
 ?>
