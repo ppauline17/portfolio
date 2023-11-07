@@ -71,7 +71,7 @@
                 <p>Ce projet comporte beaucoup d\'erreurs à cause de la durée de travail qui était très courte. Il n\'est notamment pas responsive. Il manque également beaucoup de contrôles de sécurité dû au manque de connnaissances à ce moment de la formation.</p>
             ',
             'website' => 'https://pauline-pasquier-dev.fr/lavoirelectrique',
-            'github' => 'https://github.com/ppauline17/festival_le_lavoir_electrique',
+            'github' => false,
             'isInProgress' => false,
             'updateDate' => 'Février 2023'
         ],
