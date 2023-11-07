@@ -88,11 +88,11 @@
                         ?>
                             <div class="col-md-6 col-xxl-4 mb-5">
                                 <div class="card mb-3 bg-light">
-                                    <picture class="w-100 p-3" style="height: 30vh;">
+                                    <picture class="w-100" style="height: 30vh;">
                                         <!-- Source WebP pour les navigateurs compatibles -->
-                                        <source srcset="<?=$project['picture']?>.webp" type="image/webp" class="card-img-top h-100 object-fit-contain">
+                                        <source srcset="<?=$project['picture']?>.webp" type="image/webp" class="card-img-top h-100 object-fit-cover">
                                         <!-- Source JPG pour les navigateurs non compatibles -->
-                                        <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="card-img-top h-100 object-fit-contain">
+                                        <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="card-img-top h-100 object-fit-cover">
                                     </picture>
                                     <div class="card-body">
                                         <h5 class="card-title"><?php echo $project['title']; if($project['isInProgress']){?> <span class="badge rounded-pill bg-blue">En cours</span><?php } ?></h5>
@@ -119,15 +119,25 @@
                                         <?php
                                             }
                                         ?>
+                                        <!-- Button trigger modal -->
                                             <div class="col-8 offset-2 mb-3 col-xl-4 offset-xl-0">
-                                                <button class="btn btn-light shadow w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseId<?=$project['id']?>" aria-expanded="false" aria-controls="collapseExample">
-                                                    Infos
+                                                <button type="button" class="btn btn-light shadow w-100" data-bs-toggle="modal" data-bs-target="#exampleModal<?=$project['id']?>">
+                                                Infos
                                                 </button>
                                             </div>
-                                        </div>
-                                        <div class="collapse multi-collapse" id="collapseId<?=$project['id']?>">
-                                            <div class="card-text">
-                                                <?=$project['description']?>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal<?=$project['id']?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel"><?=$project['title']?></h1>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <?=$project['description']?>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
