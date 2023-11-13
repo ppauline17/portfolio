@@ -5,9 +5,12 @@
             'id' => 6,
             'title' => 'En Avant Ton Aventure', 
             'picture' => 'assets/img/eata', 
-            'description' => '<p>Projet que je réalise bénévolement pour l\'accueil périscolaire de ma commune.</p>',
+            'description' => '
+                <p>Projet que je réalise bénévolement pour l\'accueil périscolaire de ma commune.</p>
+                <p> J\'ai choisi de le réaliser en Symfony afin de travailler cette compétence et d\'avoir une sécurité optimale pour mon premier projet réel.</p>
+                ',
             'website' => 'https://en-avant-ton-aventure.pauline-pasquier-dev.fr/',
-            'github' => 'https://github.com/ppauline17/eata',
+            'github' => 'https://github.com/ppauline17/eata_symfony',
             'isInProgress' => true,
             'updateDate' => 'Novembre 2023'
         ],
@@ -44,6 +47,7 @@
                 <p>Application web en 2 modules permettant de gérer des expositions et leurs oeuvres associées puis de proposer au public du contenu enrichi pour chaque oeuvre en accédant à sa fiche via un QR code.</p>
                 <p>Projet créé lors de la formation puis amélioré pour présenter à l\'examen.</p>
                 <p>Architecture MVC, PHP, Javascript, HTML, SCSS, Bootstrap, Twig.</p>
+                <p>La fonctionnalité de ce projet dont je suis la plus fière est le plan interactif que j\'ai créé from scratch et qui permet à l\'utilisateur de placer une oeuvre sur le plan du bâtiment pour la situer.</p>
             ',
             'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
             'github' => 'https://github.com/ppauline17/grand_angle',
