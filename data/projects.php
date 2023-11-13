@@ -6,7 +6,7 @@
             'title' => 'En Avant Ton Aventure', 
             'picture' => 'assets/img/eata', 
             'description' => '<p>Projet que je réalise bénévolement pour l\'accueil périscolaire de ma commune.</p>',
-            'website' => 'https://eata.pauline-pasquier-dev.fr/',
+            'website' => 'https://en-avant-ton-aventure.pauline-pasquier-dev.fr/',
             'github' => 'https://github.com/ppauline17/eata',
             'isInProgress' => true,
             'updateDate' => 'Novembre 2023'
