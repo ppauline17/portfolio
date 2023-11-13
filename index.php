@@ -78,8 +78,7 @@
         <section class="achievements mt-5 pt-5 section" id="achievements">
             <div class="container">
                 <div class="content">
-                    <h3>Mes réalisations</h3>
-                    <p class="mb-5">Tous ces projets sont fictifs et réalisés à des fins pédagogiques.</p>
+                    <h3 class="mb-5">Mes réalisations</h3>
                     <div class="container">
                         <div class="row mb-5">
                         <?php
