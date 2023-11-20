@@ -12,7 +12,8 @@
             'website' => 'https://en-avant-ton-aventure.pauline-pasquier-dev.fr/',
             'github' => 'https://github.com/ppauline17/eata_symfony',
             'isInProgress' => true,
-            'updateDate' => 'Novembre 2023'
+            'updateDate' => 'Novembre 2023',
+            'symfony' => true,
         ],
         [
             'id' => 3,
@@ -28,7 +29,8 @@
             'website' => 'https://pauline-pasquier-dev.fr/ecopratique',
             'github' => 'https://github.com/ppauline17/ecopratique',
             'isInProgress' => false,
-            'updateDate' => 'Octobre 2023'
+            'updateDate' => 'Octobre 2023',
+            'php' => true,
         ],
         [
             'id' => 5,
@@ -40,7 +42,8 @@
             'website' => 'https://ppauline17.github.io/parking/',
             'github' => 'https://github.com/ppauline17/parking',
             'isInProgress' => false,
-            'updateDate' => 'Septembre 2023'
+            'updateDate' => 'Septembre 2023',
+            'react' => true
         ],
         [
             'id' => 4,
@@ -57,7 +60,8 @@
             'website' => 'https://pauline-pasquier-dev.fr/grand_angle/',
             'github' => 'https://github.com/ppauline17/grand_angle',
             'isInProgress' => false,
-            'updateDate' => 'Août 2023'
+            'updateDate' => 'Août 2023',
+            'php' => true,
         ],
         [
             'id' => 1,
@@ -70,7 +74,10 @@
             'website' => 'https://pauline-pasquier-dev.fr/exacom',
             'github' => 'https://github.com/ppauline17/exacom',
             'isInProgress' => false,
-            'updateDate' => 'Avril 2023'
+            'updateDate' => 'Avril 2023',
+            'html' => true,
+            'css' => true,
+            'bootstrap' => true
         ],
         [
             'id' => 2,
@@ -86,7 +93,8 @@
             'website' => 'https://pauline-pasquier-dev.fr/lavoirelectrique',
             'github' => 'https://github.com/ppauline17/festival_le_lavoir_electrique',
             'isInProgress' => false,
-            'updateDate' => 'Février 2023'
+            'updateDate' => 'Février 2023',
+            'php' => true
         ],
         
         

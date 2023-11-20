@@ -4,9 +4,11 @@ function sendMail(){
     let email = document.getElementById("email")
     let message = document.getElementById("message")
     let messageReponse = document.getElementById("messageReponse")
+    let checkBox = document.getElementById("rgpd")
+
 
     // On vérifie si les champs sont bien remplis
-    if (nom.value !== "" && prenom.value !== "" && email.value !== "" && message.value !== ""){
+    if (nom.value !== "" && prenom.value !== "" && email.value !== "" && message.value !== "" && checkBox.checked){
             // On enregistre les données sous forme d'objet
             let donnees = {}
             donnees["nom"] = nom.value
