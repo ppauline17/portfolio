@@ -88,8 +88,12 @@
                                 <div class="card mb-3 bg-light">
                                     <picture class="w-100" style="height: 30vh;">
                                         <!-- Source WebP pour les navigateurs compatibles -->
-                                        <source srcset="<?=$project['picture']?>.webp" type="image/webp" class="card-img-top h-100 object-fit-cover">
+                                        <source media="(max-width: 600px)" srcset="<?=$project['picture']?>-small.webp" type="image/webp" class="card-img-top h-100 object-fit-cover">
+                                        <source media="(min-width: 601px)" srcset="<?=$project['picture']?>.webp" type="image/webp" class="card-img-top h-100 object-fit-cover">
                                         <!-- Source JPG pour les navigateurs non compatibles -->
+                                        <source media="(max-width: 600px)" srcset="<?=$project['picture']?>-small.jpg" class="card-img-top h-100 object-fit-cover">
+                                        <source media="(min-width: 601px)" srcset="<?=$project['picture']?>.jpg" class="card-img-top h-100 object-fit-cover">
+                                        <!-- image par défaut -->
                                         <img src="<?=$project['picture']?>.jpg" alt="capture d'écran du site <?=$project['title']?>" class="card-img-top h-100 object-fit-cover">
                                     </picture>
                                     <div class="card-body">
