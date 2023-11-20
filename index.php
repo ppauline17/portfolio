@@ -52,11 +52,11 @@
                                 <?php
                                     if(isset($skill['href'])){
                                 ?>
-                                <a href="<?=$skill['href']?>">
+                                <a href="<?=$skill['href']?>" title="Lien <?=$skill['name']?>">
                                 <?php
                                     }
                                         echo $skill['icon'];
-                                        
+
                                     if(isset($skill['href'])){
                                 ?>
                                 </a>
