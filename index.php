@@ -23,6 +23,7 @@
                                 J'ai pu découvrir au cours de cette année les différents langages de programmation web,
                                 notamment PHP et Javascript que j'affectionne particulièrement.
                             </p>
+                            <p>Je réalise des sites web en php/symfony, javascript/react et wordpress.</p>
                             <p>
                                 Je suis très motivée et j'apprends vite.
                             </p>
