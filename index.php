@@ -31,17 +31,19 @@
                                 Je cherche l'entreprise qui me fera confiance et saura m'aider à progresser pour faire
                                 de ma nouvelle passion mon métier.
                             </p>
-                            <a href="assets/img/CV_web.pdf" download class="btn btn-light me-3 rounded-pill">Mon CV</a>
-                            <a href="https://www.linkedin.com/in/pauline-pasquier-119956131/"
-                                target="_blank" title="LinkedIn"  class="btn btn-light me-3 rounded-pill">
+                            <a href="assets/img/CV_web.pdf" download class="btn btn-light me-3 mb-3 rounded-pill">
+                                <?php include('assets/img/icons/file-earmark.svg'); ?>
+                                <span>Mon CV</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/pauline-pasquier-119956131/" target="_blank" title="LinkedIn" class="btn btn-light me-3 mb-3 rounded-pill">
                                 <?php include('assets/img/icons/linkedin.svg'); ?>
                                 <span>LinkedIn</span>
                             </a>
-                            <a href="https://github.com/ppauline17" target="_blank" title="Github" class="btn btn-light me-3 rounded-pill">
+                            <a href="https://github.com/ppauline17" target="_blank" title="Github" class="btn btn-light me-3 mb-3 rounded-pill">
                                 <?php include('assets/img/icons/github.svg'); ?>
                                 <span>Github</span>
                             </a>
-                            <button class="btn btn-light me-3 rounded-pill disabled">
+                            <button class="btn btn-light me-3 mb-3 rounded-pill disabled">
                                 <?php include('assets/img/icons/contact.svg'); ?>
                                 <span>p.pauline017@gmail.com</span>
                             </button>
@@ -68,7 +70,7 @@
                                             <a href="<?= $skill['href'] ?>" title="Lien <?= $skill['name'] ?>">
                                             <?php
                                         }
-                                        include('assets/img/icons/'.$skill['icon']);
+                                        include('assets/img/icons/' . $skill['icon']);
 
                                         if (isset($skill['href'])) {
                                             ?>
@@ -100,27 +102,21 @@
                                 <div class="col-12 project p-4 rounded">
                                     <div class="row g-0">
                                         <div class="col-lg-6 p-4">
-                                            <img
-                                                srcset="
+                                            <img srcset="
                                                 <?= $project['picture'] ?>-500.jpg 500w,
                                                 <?= $project['picture'] ?>-900.jpg 900w
-                                                "
-                                                sizes="
+                                                " sizes="
                                                 (max-width: 1200px) 500px,
                                                 900px
-                                                "
-                                                src="<?= $project['picture'] ?>_900.jpg" 
-                                                alt="capture d'écran du projet <?= $project['title'] ?>" 
-                                                class="card-img-top object-fit-contain rounded shadow"
-                                            >
+                                                " src="<?= $project['picture'] ?>_900.jpg" alt="capture d'écran du projet <?= $project['title'] ?>" class="card-img-top object-fit-contain rounded shadow">
                                         </div>
                                         <div class="col-lg-6 p-4">
                                             <div class="card-body rounded p-4">
                                                 <h5 class="card-title fs-2 fw-bold">
                                                     <?php echo mb_strtoupper($project['title']);
-                                                    if ($project['isInProgress']) { ?> 
-                                                    <sup class="fs-6 badge rounded-pill bg-blue">En cours</sup><?php 
-                                                    } ?>
+                                                    if ($project['isInProgress']) { ?>
+                                                        <sup class="fs-6 badge rounded-pill bg-blue">En cours</sup><?php
+                                                                                                                } ?>
                                                 </h5>
                                                 <div class="p-4">
                                                     <?php if (isset($project['html'])) {
@@ -210,9 +206,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-            </div>
             </div>
         </section>
         <section class="contact mt-5 pt-5 section" id="contact">
