@@ -102,14 +102,15 @@
                                         <div class="col-lg-6 p-4">
                                             <img
                                                 srcset="
-                                                <?= $project['picture'] ?>-500.jpg 500,
-                                                <?= $project['picture'] ?>-900.jpg 900,
+                                                <?= $project['picture'] ?>-500.jpg 500w,
+                                                <?= $project['picture'] ?>-900.jpg 900w,
+                                                <?= $project['picture'] ?>.jpg 1660w,
                                                 "
                                                 sizes="
                                                 (max-width: 1200px) 500px,
                                                 900px
                                                 "
-                                                src="<?= $project['picture'] ?>-900.jpg" 
+                                                src="<?= $project['picture'] ?>.jpg" 
                                                 alt="capture d'écran du projet <?= $project['title'] ?>" 
                                                 class="card-img-top object-fit-contain rounded shadow"
                                             >
