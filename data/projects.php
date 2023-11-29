@@ -13,7 +13,7 @@
             'github' => 'https://github.com/ppauline17/eata_symfony',
             'isInProgress' => true,
             'updateDate' => 'Novembre 2023',
-            'symfony' => true,
+            'skills' => ['symfony'],
         ],
         [
             'id' => 3,
@@ -30,7 +30,7 @@
             'github' => 'https://github.com/ppauline17/ecopratique',
             'isInProgress' => false,
             'updateDate' => 'Octobre 2023',
-            'php' => true,
+            'skills' => ['php'],
         ],
         [
             'id' => 5,
@@ -43,12 +43,12 @@
             'github' => 'https://github.com/ppauline17/parking',
             'isInProgress' => false,
             'updateDate' => 'Septembre 2023',
-            'react' => true
+            'skills' => ['react']
         ],
         [
             'id' => 4,
             'title' => 'Grand Angle', 
-            'picture' => 'assets/img/grand_angle_public', 
+            'picture' => ['assets/img/grand_angle_public', 'assets/img/grand_angle_admin'],
             'description' => '
                 <p>Projet fictif.</p>
                 <p>Projet que j\'ai présenté pour l\'obtention de mon titre professionnel.</p>
@@ -61,7 +61,7 @@
             'github' => 'https://github.com/ppauline17/grand_angle',
             'isInProgress' => false,
             'updateDate' => 'Août 2023',
-            'php' => true,
+            'skills' => ['php'],
         ],
         [
             'id' => 1,
@@ -75,9 +75,7 @@
             'github' => 'https://github.com/ppauline17/exacom',
             'isInProgress' => false,
             'updateDate' => 'Avril 2023',
-            'html' => true,
-            'css' => true,
-            'bootstrap' => true
+            'skills' => ['html', 'css', 'bootstrap'],
         ],
         [
             'id' => 2,
@@ -94,7 +92,7 @@
             'github' => 'https://github.com/ppauline17/festival_le_lavoir_electrique',
             'isInProgress' => false,
             'updateDate' => 'Février 2023',
-            'php' => true
+            'skills' => ['php']
         ],
         
         
