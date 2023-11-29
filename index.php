@@ -109,7 +109,7 @@
                                                 (max-width: 1200px) 500px,
                                                 900px
                                                 "
-                                                src="<?= $project['picture'] ?>.jpg" 
+                                                src="<?= $project['picture'] ?>-900.jpg" 
                                                 alt="capture d'écran du projet <?= $project['title'] ?>" 
                                                 class="card-img-top object-fit-contain rounded shadow"
                                             >
