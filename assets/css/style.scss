@@ -9,6 +9,10 @@ $color-3: #B56576;
 $color-4: #E56B6F;
 $color-5: #EAAC8B;
 
+.bg-blue{
+    background-color: $color-1;
+}
+
 * {
   font-family: 'Nunito';
 }
@@ -31,7 +35,7 @@ header {
       transition: transform 0.1s linear;
       color: $color-4;
     }
-    .nav-icon{
+    .bootstrap-icon{
       fill: $color-1;
       height: 25px;
       width: 25px;
@@ -48,25 +52,25 @@ header {
   .active{
     transform: scale(1.1);
     color: $color-4;
-    .nav-icon{
+    .bootstrap-icon{
       fill: $color-4;
     }
   }
 }
-
-
-
-
 
 h1 {
   font-weight: bold;
 }
 
 .about {
-  margin-top: 50px;
-  background-color: $color-1;
-  color: white;
-  padding: 20px 0;
+    margin-top: 50px;
+    background-color: $color-1;
+    color: white;
+    padding: 20px 0;
+    .bootstrap-icon{
+        height: 16px;
+        width: 16px;
+    }
 }
 
 .about .profil-img {
@@ -102,6 +106,13 @@ p {
 .knowledge {
   padding: 20px 0;
   color: $color-1;
+  .bootstrap-icon{
+    fill: $color-4;
+    height: 30px;
+    width: 30px;
+    transform: scale(1);
+    transition: transform 0.1s linear;
+  }
 }
 
 .langages {
@@ -112,9 +123,27 @@ p {
 }
 
 .achievements {
+    h3{
+        color: white;
+    }
   background-color: $color-4;
-  color: white;
+  color: $color-1;
   padding: 20px 0;
+  .project{
+    margin-bottom: 150px;
+    background-color: white;
+
+  }
+  .card-body{
+    background-color: white;
+  }
+  .bootstrap-icon{
+    fill: $color-4;
+    height: 30px;
+    width: 30px;
+    transform: scale(1);
+    transition: transform 0.1s linear;
+  }
 }
 
 .contact {
@@ -150,69 +179,9 @@ textarea {
   color: $color-4;
 }
 
-.flip-card-container{
-  width: 100%;
-  height: 40vh;
-  position: relative;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.flip-card{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-  transition: transform 500ms ease-in-out;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-}
-
-.flip-card img{
-  display: block;
-  height: 70%;
-  margin: 0 auto;
-  object-fit: cover;
-}
-
-.flip-card p{
-  color: $color-1;
-}
-
 .achievements a{
   display: inline-block;
   width: fit-content;
-}
-
-.rotate{
-  transform: rotateY(180deg);
-}
-
-.side{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding: 20px;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  background: white;
-}
-
-.side--front{
-  z-index: 1;
-}
-
-.side--back{
-  background-color: white;
-  transform: rotateY(180deg);
-}
-
-.skill-icon{
-  fill: $color-4;
-  height: 30px;
-  width: 30px;
-  transform: scale(1);
-  transition: transform 0.1s linear;
 }
 
 a{

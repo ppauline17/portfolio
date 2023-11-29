@@ -48,7 +48,7 @@
         [
             'id' => 4,
             'title' => 'Grand Angle', 
-            'picture' => 'assets/img/grand_angle', 
+            'picture' => 'assets/img/grand_angle_public', 
             'description' => '
                 <p>Projet fictif.</p>
                 <p>Projet que j\'ai présenté pour l\'obtention de mon titre professionnel.</p>
