@@ -9,7 +9,7 @@
                         require_once('data/skills.php');
                         foreach ($skills as $skill) {
                         ?>
-                            <div class="col-3 langages mb-5" data-aos="flip-up">
+                            <div class="col-3 langages mb-5">
                                 <?php
                                 if (isset($skill['href'])) {
                                 ?>
