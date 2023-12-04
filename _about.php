@@ -1,4 +1,4 @@
-<section class="about mt-5 pt-5 section" id="about">
+<section class="about mt-5 pt-5 section">
     <div class="container">
         <div class="content">
             <div class="row">

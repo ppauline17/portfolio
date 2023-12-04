@@ -9,5 +9,6 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <title>Portfolio Pauline</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=2">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>

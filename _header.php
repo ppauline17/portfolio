@@ -1,4 +1,4 @@
-<header class="mb-5">
+<header class="mb-5" id="about">
         <div class="container">
             <nav class="mb-5 fixed-top bg-nav">
                 <div class="container">

@@ -8,7 +8,7 @@
                     require_once('data/projects.php');
                     foreach ($projects as $project) {
                     ?>
-                        <div class="col-12 project p-3 rounded">
+                        <div class="col-12 project p-3 rounded" data-aos="fade-left">
                             <div class="row g-0">
                                 <div class="col-lg-6 py-4">
                                 <?php
