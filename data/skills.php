@@ -3,7 +3,7 @@
         ['name' => 'Html', 'icon' => 'html.svg'],
         ['name' => 'CSS', 'icon' => 'css.svg'],
         ['name' => 'Sass', 'icon' => 'sass.svg'],
-        ['name' => 'Wordpress', 'icon' => 'wordpress.svg'],
+        ['name' => 'WordPress', 'icon' => 'wordpress.svg'],
         ['name' => 'Javascript', 'icon' => 'javascript.svg'],
         ['name' => 'React', 'icon' => 'react.svg'],
         ['name' => 'PHP', 'icon' => 'php.svg'],
