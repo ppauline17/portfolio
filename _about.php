@@ -19,13 +19,6 @@
                         notamment PHP et Javascript que j'affectionne particulièrement.
                     </p>
                     <p>Je réalise des sites web en php/symfony, javascript/react et WordPress.</p>
-                    <p>
-                        Je suis très motivée et j'apprends vite.
-                    </p>
-                    <p>
-                        Je cherche l'entreprise qui me fera confiance et saura m'aider à progresser pour faire
-                        de ma nouvelle passion mon métier.
-                    </p>
                     <a href="assets/img/CV_web.pdf" class="btn btn-light me-3 mb-3 rounded-pill" target="_blank" title="Mon CV">
                         <?php include('assets/img/icons/file-earmark.svg'); ?>
                         <span>Mon CV</span>
